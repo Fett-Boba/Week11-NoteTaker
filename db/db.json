@@ -1,43 +1,27 @@
 [
-     {
-       "id": "0",
-       "title": "zero",
-       "text": "Test text"
-     },  
-     {
-        "id": "1",
-        "title": "one",
-        "text": "Test text"
-      },  
-    
-     {
-       "id": "2",
-       "title": "Two",
-       "text": "Test text"
-     },
-     {
-        "id": "3",
-        "title": "Three",
-        "text": "Test text"
-      },
-      {
-        "id": "4",
-        "title": "four",
-        "text": "Test text"
-      },
-      {
-        "id": "5",
-        "title": "five",
-        "text": "Test text"
-      },        
-     {
-       "id": "6",
-       "title": "Six",
-       "text": "My sixth note"
-     },
-     {
-       "id": "7",
-       "title": "Seven",
-       "text": "Seventh Note"
-     }
-   ]
+  {
+    "id": "7",
+    "title": "Seven",
+    "text": "Seventh Note"
+  },
+  {
+    "id": "0",
+    "title": "zero",
+    "text": "Test text"
+  },
+  {
+    "id": "3",
+    "title": "Three",
+    "text": "Test text"
+  },
+  {
+    "id": "4",
+    "title": "four",
+    "text": "Test text"
+  },
+  {
+    "id": "8",
+    "title": "Add eight",
+    "text": "Four notes in DB, but new ID should be eight"
+  }
+]
