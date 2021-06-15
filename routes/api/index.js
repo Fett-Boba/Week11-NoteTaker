@@ -19,14 +19,14 @@ router.post('/notes', async (req, res) => {
      let note = JSON.parse(notes);
      let newId = 0;
      for (var i = 0; i < note.length; i++) {
-         if (note[i].id > newId) {
-              newId = note[i].id;
-         }; 
+          if (note[i].id > newId) {
+               newId = note[i].id;
+          };
      };
      newId++;
 
      // Write new note to db
-     let jsObj = {id: `${newId}`, title: `${req.body.title}`, text: `${req.body.text}`};
+     let jsObj = { id: `${newId}`, title: `${req.body.title}`, text: `${req.body.text}` };
      note.push(jsObj);
      fs.writeFileSync(dbFilename, JSON.stringify(note, null, 2));
 
@@ -46,7 +46,7 @@ router.delete('/notes/:id', async (req, res) => {
      let j = 0;
 
      // Delete Note: New array written with deleted note omitted
-     for (var i=0; i < note.length; i++) {
+     for (var i = 0; i < note.length; i++) {
           if (note[i].id !== id) {
                newNote[j] = note[i];
                j++;

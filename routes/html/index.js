@@ -7,7 +7,7 @@ router.get('/notes', async (req, res) => {
 });
 
 // Display main webpage
-router.get('/', async (req, res) => {     
+router.get('/', async (req, res) => {
      res.sendFile(path.join(__dirname, '../../public/index.html'));
 });
 
