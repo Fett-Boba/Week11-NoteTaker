@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
-// Insure we can server static css and js
+// Insure we can serve static css and js
 app.use(express.static('public'));
 
 // Listener
