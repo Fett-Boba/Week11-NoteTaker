@@ -1,10 +1,12 @@
 const path = require('path');
 const router = require('express').Router();
 
+// Display notes 
 router.get('/notes', async (req, res) => {
      res.sendFile(path.join(__dirname, '../../public/notes.html'));
 });
 
+// Display main webpage
 router.get('/', async (req, res) => {     
      res.sendFile(path.join(__dirname, '../../public/index.html'));
 });

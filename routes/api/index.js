@@ -4,11 +4,15 @@ const fs = require('fs');
 const path = require('path');
 const dbFilename = path.join(__dirname, '../../db/db.json');
 
+
+// Display Notes 
 router.get('/notes', async (req, res) => {
      let notes = fs.readFileSync(dbFilename);
      res.json(JSON.parse(notes));
 });
 
+
+// Create new note
 router.post('/notes', async (req, res) => {
      // Read database and create newnote ID by adding one to the highest id in DB
      let notes = fs.readFileSync(dbFilename);
@@ -31,6 +35,8 @@ router.post('/notes', async (req, res) => {
      res.json(JSON.parse(newNotes));
 });
 
+
+// Delete Notes
 router.delete('/notes/:id', async (req, res) => {
      // Get the ID of item to delete, and read the db
      let id = req.params.id;
